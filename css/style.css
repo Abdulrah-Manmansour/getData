@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
+.item{
+   width: 30%;
+   padding: 15px 0 40px 0;
+   background-color:#fff ;
+   text-align: center;
+   margin-bottom: 40px;
+   box-shadow: 1px 1px 7px #ccc,-1px -1px 7px #ccc inset ;
+   cursor: pointer;
+}
+.item img{
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-bottom: 20px;
+}
+.item h1{
+    margin-bottom: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #f00;
+    
+}
+.deletuser{
+    margin-top:20px ;
+    padding: 13px 20px;
+    border: none;
+    background: #e01010;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.showpop{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transition:.5s all ease ;
+    -webkit-transition:.5s all ease ;
+    -moz-transition:.5s all ease ;
+    -ms-transition:.5s all ease ;
+    -o-transition:.5s all ease ;
+}
+  .box{
+    text-align: center;
+    width: 400px;
+ 
+    background-color: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+   padding-top:20px ;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    box-shadow: 10px 10px 10px #ccc,-10px -10px 10px #ccc;
+   display: none;
+
+} 
+.fa-times-circle{
+    position: absolute;
+    top: 0;
+    right:  0;
+    margin: 10px 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.img-box{
+    width: 190px;
+    margin-bottom: 30px;
+}
+@media(max-width:676px){
+    .row{
+        flex-flow: column wrap;
+    }
+    .item{
+        width: 100%;
+    }
+    
+     .box{
+        width: 90%;
+    }
+    
+}
+
